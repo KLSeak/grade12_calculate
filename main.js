@@ -17,22 +17,6 @@ function calculateScore(){
         const studentRank = (math_score + khmer_score + bio_score + kimi_score+
                             rub_score + history_score + english_score);
 
-        // if(studentRank > 475){
-        //     document.getElementById("studentRank").textContent = "The score is too high please try again";
-        // }else if(studentRank < 427 || studentRank == 475){
-        //     document.getElementById("studentRank").textContent = "Congrate Your rank is A";
-        // }else if(studentRank < 380 || studentRank == 427){
-        //     document.getElementById("studentRank").textContent = "Congrate Your rank is B";
-        // }else if(studentRank < 332 || studentRank == 380){
-        //     document.getElementById("studentRank").textContent = "Congrate Your rank is C";
-        // }else if(studentRank < 285 || studentRank == 332){
-        //     document.getElementById("studentRank").textContent = "Congrate Your rank is D";
-        // }else if(studentRank < studentRank == 285){
-        //     document.getElementById("studentRank").textContent = "Congrate Your rank is E";
-        // }else{
-        //     document.getElementById("studenRank").textContent = "Soryy you're faild";
-        // }
-
         if(studentRank <= 0){
             document.getElementById("studentRank").textContent = "Your score is less than 0"
         }else if(studentRank < 236){
