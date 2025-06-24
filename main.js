@@ -1,0 +1,53 @@
+// 
+function calculateScore(){
+    const math_score = parseFloat(document.getElementById("math_score").value)
+    const khmer_score = parseFloat(document.getElementById("khmer_score").value)
+    const bio_score = parseFloat(document.getElementById("bio_score").value)
+    const kimi_score = parseFloat(document.getElementById("kimi_score").value)
+    const rub_score = parseFloat(document.getElementById("rub_score").value)
+    const history_score = parseFloat(document.getElementById("history_score").value)
+    const english_score = parseFloat(document.getElementById("english_score").value)
+
+    if(isNaN(math_score) || isNaN(khmer_score) || isNaN(bio_score) || isNaN(kimi_score) 
+        || isNaN(rub_score) || isNaN(history_score) || isNaN(english_score)){
+            document.getElementById("studentRank").textContent = "Invalid input! Please Enter the NUMBER!";
+            return;
+        }
+
+        const studentRank = (math_score + khmer_score + bio_score + kimi_score+
+                            rub_score + history_score + english_score);
+
+        // if(studentRank > 475){
+        //     document.getElementById("studentRank").textContent = "The score is too high please try again";
+        // }else if(studentRank < 427 || studentRank == 475){
+        //     document.getElementById("studentRank").textContent = "Congrate Your rank is A";
+        // }else if(studentRank < 380 || studentRank == 427){
+        //     document.getElementById("studentRank").textContent = "Congrate Your rank is B";
+        // }else if(studentRank < 332 || studentRank == 380){
+        //     document.getElementById("studentRank").textContent = "Congrate Your rank is C";
+        // }else if(studentRank < 285 || studentRank == 332){
+        //     document.getElementById("studentRank").textContent = "Congrate Your rank is D";
+        // }else if(studentRank < studentRank == 285){
+        //     document.getElementById("studentRank").textContent = "Congrate Your rank is E";
+        // }else{
+        //     document.getElementById("studenRank").textContent = "Soryy you're faild";
+        // }
+
+        if(studentRank <= 0){
+            document.getElementById("studentRank").textContent = "Your score is less than 0"
+        }else if(studentRank < 236){
+            document.getElementById("studentRank").textContent = "You're failed"
+        }else if(studentRank <= 285){
+            document.getElementById("studentRank").textContent = "Grade E"
+        }else if(studentRank <= 331){
+            document.getElementById("studentRank").textContent = "Grade D"
+        }else if(studentRank <= 379){
+            document.getElementById("studentRank").textContent = "Grade C"
+        }else if(studentRank <= 426){
+            document.getElementById("studentRank").textContent = "Grade B"
+        }else if(studentRank <= 475){
+            document.getElementById("studentRank").textContent = "Grade A"
+        }else if(studentRank > 475){
+            document.getElementById("studentRank").textContent = "Your score is bigger than 475";
+        }
+    }

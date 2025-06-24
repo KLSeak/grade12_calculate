@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>គណនាពិន្ទុបាក់ឌុប</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="container">
+        <h1>គណនាពិន្ទុបាក់ឌុបវិទ្យាសាស្រ្តពិត</h1>
+        <form action="#" class="calculate">
+            <div class="fill">
+                <label for="">គណិតវិទ្យា</label>
+                <input type="text" id="math_score" > 
+                <label for="">ភាសាខ្មែរ</label>
+                <input type="text" id="khmer_score" > 
+            </div>
+           
+            <div class="fill">
+                <label for="">ជីវវិទ្យា</label>
+                <input type="text" id="bio_score"> 
+                <label for="">គីមីវិទ្យា</label>
+                <input type="text" id="kimi_score"> 
+            </div>
+    
+            <div class="fill">
+                <label for="">រូបវិទ្យា</label>
+                <input type="text" id="rub_score" > 
+                <label for="">ប្រវិត្តវិទ្យា</label>
+                <input type="text" id="history_score"  > 
+            </div>
+            <div class="fill">
+                <label for="">ភាសាអង់គ្លេស</label>
+                <input type="text" id="english_score"  > 
+            </div>
+            <div class="fill">
+                <button onclick="calculateScore()">គណនា</button>
+            </div>
+            <p id="studentRank">Your rank is: </p>
+        </form>
+    </div>
+</body>
+</html>
+<script src="main.js"></script>
